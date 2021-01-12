@@ -9,3 +9,5 @@ Temp
 !temp
 !Temp
 package-lock.json
+
+.gitignore
