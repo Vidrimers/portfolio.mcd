@@ -79,6 +79,9 @@ header {
   /* border: 2px solid black; */
   box-shadow: 0 0 10px black;
 }
+.info-block img:hover {
+  box-shadow: 0 0 10px rgba(195, 28, 28, 0.8);
+}
 .info {
   /* display: block; */
 
