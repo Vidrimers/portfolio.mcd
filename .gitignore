@@ -1,0 +1,11 @@
+# dependencies
+node_modules
+
+# logs
+npm-debug.log
+
+temp
+Temp
+!temp
+!Temp
+package-lock.json
