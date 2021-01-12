@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  user-select: none;
 }
 *::selection {
   background-color: rgba(195, 28, 28, 0.8);
