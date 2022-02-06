@@ -3,83 +3,139 @@
   margin: 0;
   user-select: none;
 }
+
 *::selection {
   background-color: rgba(195, 28, 28, 0.8);
 }
+img{
+  max-width: 100%;
+}
+
 body {
-  background: url(../img/1.jpg) no-repeat;
-  background-size: 100%;
+  background: url(../img/1.jpg) no-repeat top center;
+  background-size: cover;
   font-family: "Roboto", sans-serif;
+  /* height: 100vh; */
 }
-header {
-  background: rgba(195, 28, 28, 0.5);
-  /* opacity: 0.5; */
-  height: 135px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+
+.container {
+  max-width: 140rem;
+  margin: 0 auto;
+}
+
+.roads {
+  background: rgba(195, 28, 28, 0.3);
   backdrop-filter: blur(3px);
+  padding: 1.5rem 0;
+
 }
-.header__text-block {
-}
-.header-text {
+
+.roads__title {
   color: black;
   opacity: 0.5;
+  font-size: 1.6rem;
   text-transform: uppercase;
   text-align: center;
-  padding: 15px;
+  margin-bottom: 3rem;
   font-weight: 700;
   letter-spacing: 4px;
   text-shadow: 2px 3px 5px white;
 }
-.header-text span {
+
+.roads__title span {
   text-transform: none;
 }
-.road-block {
-  text-align: center;
-  justify-content: space-around;
+
+.roads__items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+
+  /* display: grid; */
+  /* gap: 2rem; */
+  /* grid-template-columns: repeat(11,1fr); */
+
 }
-.road {
-  display: inline-block;
-  /* background: #8c959d; */
+
+.roads__item {
+  max-width: 15rem;
+  margin: 1rem;
+}
+.roads__item-link{
+  /* display: inline-block; */
   background: rgba(195, 28, 28, 0.8);
   color: white;
-  margin-right: 5px;
   font-size: 16px;
   text-decoration: none;
   border-radius: 3px;
   border: solid 1px white;
-  /* box-shadow: 1px 1px blue; */
   padding: 5px 15px;
   transition: 0.2s;
 }
-.road:active {
-  /* text-decoration: none; */
-}
-.road:hover {
+
+.roads__item-link:hover {
   background: white;
   color: rgba(195, 28, 28, 0.8);
 }
-.general {
+
+.original-link {
   color: white;
   background: rgba(195, 28, 28, 0.8);
+  border: 1px solid red;
 }
-.mcd {
+.roads__mcd{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.roads__mcd-link {
+  border: 1px solid red;
   text-transform: uppercase;
-  background: white;
-  color: rgba(195, 28, 28, 0.8);
-  color: white;
-  background: rgba(195, 28, 28, 0.8);
+}
+
+a{
+  transition: all .3s !important;
 }
 .info-block {
-  margin-top: 50px;
+  margin-top: 2rem;
 }
-.info {
-  /* display: block; */
 
+.info__text {
   font-size: 24px;
   opacity: 0.6;
   padding: 5px;
   text-align: center;
+}
+.info-block__items{
+  display: none;
+}
+.info-block__items--active{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.photo{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1rem;
+}
+.photo__item{
+  
+}
+.photo__item img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.photo__item a{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.main-link{
+  text-align: center;
+  margin-bottom: 1rem;
 }
